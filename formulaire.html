@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+    <form action="traitementForm.php" method="GET"></form>
+      <legend>Info Personnelles</legend>
+      <div>
+        <label for="nom">Nom:</label>
+        <input type="text" name="nom" placeholder="Nom" /><br />
+    </div>
+    <div> 
+        <label for="prenom">Prénom:</label>
+        <input type="text" name="prenom" placeholder="Prénom" /><br />
+    </div>
+    <div>    
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="E-mail" /><br />
+    </div>
+    <div>    
+        <label for="numéro">Numéro:</label>
+        <input type="tel" name="tel" placeholder="Numéro" /><br />
+    </div>    
+    </form>
+      <form method="POST" action="MonProgramme.php">
+        <div>
+        <label for="password">Mot de passe:</label>
+        <input type="password" placeholder="Ex: P@ssWo4d" /><br />
+    </div>
+    <div>
+        <label for="number">Numéro:</label>
+        <input type="number" placeholder="Ex: 15" /><br />
+    </div>
+        <label for="commentaire">Laissez un commentaire:</label> 
+        <br />
+        <textarea
+          placeholder="Un très long texte"
+          cols="70"
+          rows="10"
+        ></textarea
+        ><br />
+        <label for="date">Date de mon commentaire:</label>
+        <input type="date" name="Date" placeholder="JJ/MM/AAAA" />
+      </form>
+    </fieldset>
+    <fieldset>
+        <legend>Vous préférez:</legend>
+        <form method="post" action="monProgramme.php">
+            <input type="checkbox" id="checkbox" /><label for="checkbox">Le HTML</label><br />
+            <input type="checkbox" id="checkbox" /><label for="checkbox">Le CSS</label><br />
+            <input type="checkbox" id="checkbox" /><label for="checkbox">Le JavaScript</label><br />
+            <input type="checkbox" id="checkbox" /><label for="checkbox">Ne rien faire</label><br />
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Vous vous levez:</legend>
+        <form method="post" action="monProgramme.php">
+            <input type="radio" id="radio1" name="le matin"><label for="radio">Le matin</label><br />
+            <input type="radio" id="radio2" name="le midi"><label for="radio">Le midi</label><br />
+            <input type="radio" id="radio3" name="le soir"><label for="radio">Le soir</label><br />
+            <input type="radio" id="radio4" name="en retard"><label for="radio">En retard !</label><br />
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Fin de formulaire</legend>
+        <form method="post" action="monProgramme.php">
+         <label for="liste">Vous en avez assez ?</label>
+         <select name="liste" id="liste">
+            <optgroup label="Team pas encore">
+                <option value="option1">J'en veux plus</option>
+                <option value="option2">C'est super !</option>
+            </optgroup>
+            <optgroup label="Team Oula">
+                <option value="option1">J'en ai marre</option>
+                <option value="option2">Pitié!</option>
+            </optgroup>
+         </select><br />
+         <input type="submit" value="Envoyer">
+         <input type="reset" value="Reset">
+        </form>
+
+    </fieldset>
+  </body>
+</html>
